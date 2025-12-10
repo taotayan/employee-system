@@ -2,8 +2,7 @@ requirements.md
 
 Requirements: Employee Management System
 
-1. Overview
-ระบบจัดการพนักงาน (Employee Management System) เป็นระบบเว็บที่ช่วยให้ผู้ใช้งานสามารถเพิ่ม แก้ไข ลบ ค้นหา และดูรายละเอียดของพนักงานได้
+1. ระบบจัดการพนักงาน (Employee Management System) เป็นระบบเว็บที่ช่วยให้ผู้ใช้งานสามารถเพิ่ม แก้ไข ลบ ค้นหา และดูรายละเอียดของพนักงานได้
 
 ---
 
@@ -17,7 +16,7 @@ Employee Module
 - เรียงลำดับข้อมูล (Sort)
 - แสดงรายละเอียดพนักงาน
 
-Authentication Module (ตัวเลือก เพิ่มความท้าทาย)
+Authentication Module
 - Login ด้วย username/password
 - Token-based Authentication (JWT)
 
