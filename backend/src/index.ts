@@ -1,24 +1,20 @@
 import dotenv from "dotenv";
-import express from "express";
-import cors from "cors";
-import authRoutes from "./routes/auth.route";
-import usersRoutes from "./routes/users";
-import employeeRoutes from "./routes/employees";
-
 dotenv.config();
 
+import express from "express";
+import cors from "cors";
+import employeeRoutes from "./routes/employees";
+import authRoutes from "./routes/auth.route";
+import userRoutes from "./routes/users";
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
+app.use("/admin/users", userRoutes);
 app.use("/auth", authRoutes);
-app.use("/admin/users", usersRoutes);
 app.use("/employees", employeeRoutes);
 
-app.get("/", (_req, res) => {
-  res.json({ message: "API is running" });
-});
-
 app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+  console.log("🚀 Backend running on http://localhost:3000");
 });
